@@ -10,7 +10,7 @@ import utils.Params;
 @CucumberOptions (
         features =  "src/test/resources/features",
         glue = {"stepDefinitions"} ,
-        tags = {"@SearchContact"},
+        //tags = {"@SearchContact"},
         monochrome = true,
         strict = true,
         plugin = {"pretty",
