@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Search Suite" verbose="1"  parallel="false" thread-count="1">
+  <parameter name="browserName" value="chrome" />
+  <parameter name="mainURL" value="https://app.cloudfinder.com"/>
+
+  <test name="UI tests" >
+    <classes>
+      <class name="tests.TestRunner">
+        <methods>
+          <include name="scenario"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
